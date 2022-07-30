@@ -1,0 +1,161 @@
+body {
+  box-sizing: border-box;
+  font-family: "Poppins", Helvetica, "Roboto", "Arial";
+  font-size: 1rem;
+  background-color: #f5f5f5;
+}
+
+svg text {
+  font-family: "Poppins", Helvetica, "Roboto", "Arial";
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 40px;
+  margin-bottom: 200px;
+}
+
+.block-row {
+  width: 1400px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+/*  */
+.chart-wrapper {
+  position: relative;
+}
+
+.tooltip {
+  position: absolute;
+  display: inline-block;
+  z-index: 1;
+  background-color: #f5f5f5;
+  padding: 10px 16px 8px 16px;
+  border: 1px solid lightgrey;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+  border-radius: 2px;
+  font-size: 0.9rem;
+  line-height: 125%;
+}
+
+.tooltip .name {
+  font-weight: bold;
+}
+
+.tooltip .team {
+  font-weight: normal;
+  margin-left: 5px;
+}
+
+/* map */
+.map button.clear {
+  position: absolute;
+  right: -543px;
+  top: 10px;
+}
+
+.map .legend {
+  position: absolute;
+  left: 10px;
+  top: 450px;
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  font-weight: bold;
+}
+
+.map .legend span {
+  display: inline-block;
+  width: 15px;
+  height: 10px;
+  margin-right: 5px;
+  font-weight: normal;
+}
+
+.map .feature {
+  cursor: default;
+}
+
+/* scatter chart */
+.player-chart {
+  padding-left: 10px;
+}
+
+.player-chart div.axis-options span {
+  font-weight: bold;
+  opacity: 0.9;
+  margin-right: 10px;
+}
+.player-chart div.axis-options select {
+  width: 80px;
+}
+
+.player-chart .tooltip {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3px;
+}
+
+/* team-chart */
+.team-chart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.team-chart form {
+  padding-left: 150px;
+  align-self: flex-start;
+  margin-bottom: 12px;
+}
+
+.team-chart label {
+  font-size: 1rem;
+}
+
+.team-chart .tooltip {
+  min-width: 150px;
+  max-width: 280px;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 3px;
+}
+
+.team-chart .tooltip div {
+  display: flex;
+  flex-direction: row;
+  column-gap: 8px;
+  flex-wrap: wrap;
+}
+
+.team-chart .tooltip span.item {
+  display: inline-flex;
+  column-gap: 4px;
+}
+
+.team-chart .tooltip span.selected {
+  font-weight: bold;
+  color: #ff5600;
+}
+
+.team-chart label {
+  margin-left: 8px;
+  font-weight: bold;
+}
+
+.team-chart label.sortby {
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+.legend {
+  cursor: default;
+}
